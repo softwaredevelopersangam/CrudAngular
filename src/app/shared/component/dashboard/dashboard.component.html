@@ -1,0 +1,27 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let post of allPost">
+          <ng-container >
+            <mat-card class="example-card mb-4 bg-success text-white">
+                <mat-card-header>
+                    <h2><strong >{{post.title}}</strong></h2>
+                </mat-card-header>
+                <mat-divider></mat-divider>
+                <mat-card-content>
+                    <p class="p-2 mb-4">{{post.body}}</p>
+                </mat-card-content>
+                <mat-card-footer class="text-right">
+                    <button (click)="onClickEditPost(post)" class="btnInfo mr-1" type="button" mat-raised-button color="primary" aria-label="Example icon button with a eidt icon" >
+                        <mat-icon>edit_square</mat-icon>
+                        Edit
+                      </button>
+                      <button (click)="onClickDelete(post)" class="btnInfo" type="button" mat-raised-button color="warn"  aria-label="Example icon button with a delete icon">
+                        <mat-icon>delete</mat-icon>
+                        Delete
+                      </button>
+                </mat-card-footer>
+           </mat-card>
+          </ng-container>
+        </div>
+    </div>
+</div>

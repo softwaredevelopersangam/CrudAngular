@@ -1,0 +1,32 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.logo{
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+}
+.icon{
+  padding-top: 4px;
+  margin-right: 10px;
+  color: rebeccapurple;
+}
+.active{
+  background-color: aqua !important;
+  color: royalblue !important;
+  border-radius: 10px;
+}
